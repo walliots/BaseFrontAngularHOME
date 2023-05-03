@@ -1,0 +1,78 @@
+<nav id="sidebar" class="active">
+    <button type="button" id="sidebarCollapse" class="btn btn-primary" (click)="myFunction()">
+        <i class="fa fa-window-minimize"></i>
+        <span class="sr-only">Toggle Menu</span>
+    </button>
+    <img src="../../../assets/img/adv_logo.svg" alt="" style="margin: 35; margin-top: 50px;" id="logoHide"
+        class="mt-5 mb-5">
+    <img src="../../../../assets/img/tiny-moov.svg" alt="" id="mini-logo-hide" style="margin-top: -155px;">
+
+    <a>
+        <div class="d-flex bd-highlight">
+            <div class="mr-auto p-2 bd-highlight"><img src="{{path}}" alt="{{alttext}}" id="profile-img"></div>
+            <div class="d-flex align-items-start flex-column bd-highlight">
+                <div class="p-2 bd-highlight"><span id="span-font"><strong>{{nome}}</strong></span></div>
+                <div class="p-2 bd-highlight"><span id="span-font">{{funcao}}</span></div>
+            </div>
+        </div>
+    </a>
+
+
+
+
+
+
+    <ul class="list-unstyled components mb-5 mt-3">
+        <li>
+            <a href="#"><span class="material-symbols-outlined">
+                    receipt
+                </span>Controle de viagens</a>
+        </li>
+        <li>
+            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span
+                    class="material-symbols-outlined">
+                    border_color
+                </span>Cadastráveis</a>
+            <ul class="collapse list-unstyled" id="homeSubmenu" style="margin-top: -8px; color: white;">
+                <li>
+                    <a href="" id="margin-drop-ul-a" routerLink="/cadastro-usuario">Usuários</a>
+                </li>
+                <li>
+                    <a href="#" id="margin-drop-ul-a" routerLink="/cadastro-setores">Setores</a>
+                </li>
+                <li>
+                    <a href="#" id="margin-drop-ul-a" style="border-radius: 4.39626px;" routerLink="/cadastro-despesa">Tipo de despesa</a>
+                </li>
+                <li>
+                    <a href="#" id="margin-drop-ul-a" style="border-radius: 4.39626px;">Aprovação</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#"><span class="material-symbols-outlined">
+                    pie_chart
+                </span>Relatórios</a>
+        </li>
+        <li><a href=""><span class="material-symbols-outlined mt-5">
+                    help
+                </span>Me ajuda!</a>
+        </li>
+        <li>
+            <button style="border: none; background-color: transparent;">
+                <a (click)="sair()"><span class="material-symbols-outlined">
+                        logout
+                    </span>Sair</a>
+            </button>
+        </li>
+
+    </ul>
+
+    <div class="footer">
+        <ul class="list-unstyled components mb-5 mt-5">
+
+            <li>
+
+            </li>
+        </ul>
+    </div>
+</nav>

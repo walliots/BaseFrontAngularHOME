@@ -1,0 +1,22 @@
+/* .container2 {
+    background-image: url(../../../assets/img/login_background.svg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+.container2 {
+    background-color: #040404e0;
+}
+
+.logozinho {
+    background-image: url(../../../assets/img/adv_mini_logo_login.svg);
+}
+
+.font-login-st {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 27.4861px;
+    line-height: 33px;
+    color: #FFFFFF;
+}

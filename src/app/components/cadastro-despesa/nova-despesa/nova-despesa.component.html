@@ -1,0 +1,92 @@
+<head>
+    <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet">
+</head>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+<div class="wrapper d-flex align-items-stretch">
+
+    <app-aside></app-aside>
+
+    <!-- Page Content  -->
+    <div id="content" class="p-4 p-md-5">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <div>
+                    <h6>Cadastráveis / Tipo de despesa</h6>
+                    <h2><strong><button id="none" [routerLink]="['/cadastro-despesa']"><span
+                                    class="material-symbols-outlined" style="color: blue !important;">
+                                    arrow_back_ios
+                                </span></button>Novo tipo de despesa</strong></h2>
+                </div>
+
+                <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSuppongtedContent">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="p-4 p-md-4">
+            <form [formGroup]="Form">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="email"><strong>Depesa</strong></label>
+                        <input formControlName="despesa" type="text" class="form-control"
+                            placeholder="Ex.: Alimentação, combustível, hospedagem..." required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="email"><strong>Arquivo</strong></label>
+                        <file-pond  type="file" id="formFileMultiple" #myPond [options]="pondOptions" [files]="pondFiles" (oninit)="pondHandleInit()"
+                                (onaddfile)="pondHandleAddFile($event)" (change)="enviarFoto($event)">
+                            </file-pond>
+                    </div>
+
+                    
+                    <div class="form-group col-md-6">
+                        <label for="email"><strong>Valor total(R$)</strong></label>
+                        <input formControlName="valor" type="number" class="form-control" placeholder="Digite um valor"
+                            required>
+                    </div>
+                    <div class="form-group col-md-6 mt-4">
+                        <div class="d-flex bd-highlight mb-3">
+                            <input type="checkbox" formControlName="subscribe" id="subscribe" style="width:20px ;" value="10"/>
+                            <div class="mr-auto p-2 bd-highlight"><strong>Ultrapassar limites</strong></div>
+                            <div class="p-2 bd-highlight"><label>Indica que esta despesa pode ter o limite
+                                    ultrapassado.</label></div>
+                        </div>
+                    </div>
+                    <hr width="100%" />
+                    
+
+
+
+                    <div class="form-group col-md-12 mt-5 d-flex justify-content-end ">
+                        <button routerLink="/cadastro-despesa" type="button"
+                            class="btn cancel-button mr-3 d-flex align-items-center" id=""><span
+                                class="material-symbols-outlined mr-5">
+                                cancel
+                            </span>CANCELAR</button>
+                        <button type="button" class="btn save-button d-flex align-items-center"><span
+                                class="material-symbols-outlined mr-5" (click)="save()">
+                                check_circle
+                            </span>SALVAR</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

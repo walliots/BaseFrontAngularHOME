@@ -1,0 +1,32 @@
+
+
+<div class="container2">
+	<section class="vh-100 gradient-custom">
+		<div class="container py-5 h-100">
+			<div class="row d-flex justify-content-center align-items-center h-100">
+				<div class="col-12 col-md-8 col-lg-6 col-xl-5">
+					<div class="card text-white" style="border-radius: 1rem; background-color:#201d1d59; box-shadow: 0px 1.69145px 3.38291px rgb(0 0 0 / 16%);">
+						<div class="card-body p-4 text-center">
+
+							<form [formGroup]="form" class="mb-md-3 mt-md-3" novalidate>
+								<h2 class="font-login-st mb-2">Acessar</h2>
+								<div class="form-outline form-white mb-2 mt-5">
+									<label class="form-label d-flex justify-content-start font-weight-bold" for="typeEmailX">Email</label>
+									<input type="email" id="typeEmailX" class="form-control form-control-lg" formControlName="login"/>
+								</div>
+								<div class="form-outline form-white mb-4">
+									<p class="small pb-lg-2"><a class="text-white-50 d-flex justify-content-end" href="#!">Esqueceu sua&nbsp;<strong>senha?</strong></a></p>
+									<label class="form-label d-flex justify-content-start font-weight-bold" for="typePasswordX">Password</label>
+									<input type="password" id="typePasswordX" class="form-control form-control-lg" formControlName="senha" />
+								</div>
+								<button class="btn btn-outline-dark btn-lg btn-block px-5 " type="submit" [disabled]="form.invalid" (click)="logar()">Fazer Login</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+
+<!-- <label for="" *ngIf="senhaIncorreta" style="background-color: red; padding: 10px 20px; margin-top: 10px;">Email ou senha incorreta</label> -->

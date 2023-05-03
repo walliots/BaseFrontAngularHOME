@@ -1,0 +1,6 @@
+<div class="form-group col-md-6">
+    <label for="email"><strong>Arquivo</strong></label>
+    <file-pond class="" type="file" id="formFileMultiple" #myPond [options]="pondOptions" [files]="pondFiles" (oninit)="pondHandleInit()"
+            (onaddfile)="pondHandleAddFile($event)" (change)="enviarFoto($event)">
+        </file-pond>
+</div>

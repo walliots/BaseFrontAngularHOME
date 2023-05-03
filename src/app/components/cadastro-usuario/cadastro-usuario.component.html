@@ -1,0 +1,109 @@
+<head>
+    <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet">
+</head>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<div class="wrapper d-flex align-items-stretch">
+
+    <app-aside></app-aside>
+
+    <!-- Page Content  -->
+    <div id="content" class="p-4 p-md-5">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <div>
+                    <h6>Usuário</h6>
+                    <h2><strong>Cadastráveis</strong></h2>
+                </div>
+
+                <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSuppongtedContent">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="p-4 p-md-4">
+            <form action="">
+                <div class="form-control d-flex align-items-center justify-content-between" style="height: 100px;">
+                    <h6><strong>CADASTRAR NOVOS USUÁRIOS</strong></h6>
+                    <a routerLink="/novo-usuario" class="">
+                        <button  type="button" class="btn btn-secondary btn-style-moov d-flex align-items-center"><span
+                                class="material-symbols-outlined md-18">
+                                add_circle
+                            </span><span class="ml-2">NOVOS USUÁRIOS</span></button>
+                    </a>
+                </div>
+                <div class="form-control align-items-start flex-column bd-highlight mt-3" style="height: 100px;">
+                    <span class="">Pesquisar nome ou e-mail</span>
+                    <div class="d-flex align-items-center">
+                        <input type="text" class="form-control col-xl-6 mt-2" name="nome" [(ngModel)]="nome" (ngModelChange)="search()">
+                        <button class="icon-position">
+                            <span class="material-symbols-outlined">
+                                search
+                            </span>
+                        </button>
+                    </div>
+
+
+                </div>
+
+
+                <div class="middle-text-name mt-3"><h6><strong>USUÁRIOS CADASTRADOS</strong></h6></div>
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                      <th scope="col">Nome</th>
+                      <th scope="col">Email</th>
+                      <th scope="col">Perfil</th>
+                      <th scope="col">Status</th>
+                      <th class="text-center" scope="col">Editar</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr *ngFor="let usuario of lista | slice: (page-1) * pageSize : (page-3) * pageSize + pageSize">
+                      <td>{{ usuario.nome}} </td>
+                      <td>{{ usuario.email}}</td>
+                      <td>{{ usuario.perfil}}</td>
+                      <td [ngClass]="(usuario.ativo)?'btn btn-outline-warning w-75':'btn btn-outline-danger w-75' ">{{ usuario.ativo}}</td>
+                      <td class="text-center">
+                        <a [routerLink]="['/editar-usuario/', usuario.id]">
+                            <span class="material-symbols-outlined">
+                                edit
+                                </span>
+                        </a>
+                        <button style="border:none; background-color: none;" (click)="delete(usuario.id, usuario.nome)">
+                            <span class="material-symbols-outlined">
+                                delete
+                                </span>
+                        </button>
+                    </td>
+                    </tr>
+                    </tbody>
+                  </table>
+
+                <div class="mt-3" style="width: 100%; display: flex; justify-content: end;">
+                    <ngb-pagination [(page)]="page" [pageSize]="pageSize" [collectionSize]="dados?.length">
+                
+                    </ngb-pagination>
+                </div>
+
+            </form>
+        </div>
+
+
+    </div>
+</div>

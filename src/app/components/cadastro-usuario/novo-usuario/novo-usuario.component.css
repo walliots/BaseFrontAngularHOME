@@ -1,0 +1,64 @@
+@media (min-width: 768px) {
+    .p-md-5 {
+        padding: 0rem !important;
+        background-color: white !important;
+    }
+}
+
+.bg-light {
+    background-color: #fff !important;
+}
+
+.btn-style-moov {
+    width: 185.96px;
+    height: 30.91px;
+    background: #31D760;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    border: none;
+}
+
+.icon-position {
+    margin: -33px;
+    z-index: 1;
+    margin-top: -17px;
+    border: none;
+    background: transparent;
+}
+
+#none {
+    border: none;
+    background-color: transparent;
+}
+
+
+@media (min-width: 768px) {
+    .p-md-4 {
+        padding: 3.5rem !important;
+    }
+}
+
+.save-button {
+    width: 208px;
+    height: 48.81px;
+    background: #31D760;
+    border-radius: 10px;
+    color: white;
+}
+
+.cancel-button {
+    width: 208px;
+    height: 48.81px;
+    background: #EB5A46;
+    border-radius: 10px;
+    color: white;
+}
+
+.material-symbols-outlined {
+    color: white;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 200,
+  'opsz' 20
+}

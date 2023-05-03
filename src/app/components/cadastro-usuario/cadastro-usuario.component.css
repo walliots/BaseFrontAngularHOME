@@ -1,0 +1,39 @@
+@media (min-width: 768px) {
+    .p-md-5 {
+        padding: 0rem !important;
+        background-color: white !important;
+    }
+}
+
+.bg-light {
+    background-color: #fff !important;
+}
+
+.btn-style-moov {
+    width: 185.96px;
+    height: 30.91px;
+    background: #31D760;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    border: none;
+}
+.icon-position{
+    margin: -33px;
+    z-index: 1;
+    margin-top: -17px;
+    border: none;
+    background: transparent;
+}
+.middle-text-name{
+    border-bottom: 3px solid rgb(75, 61, 61);
+    width: 15%;
+}
+ngb-pagination ::ng-deep ul > li:not(.active) > a {
+    background-color:white;
+    color: black;
+    border: none;
+}
+
+ngb-pagination ::ng-deep ul > li.active > a {
+    background-color:#535353 !important;
+}
