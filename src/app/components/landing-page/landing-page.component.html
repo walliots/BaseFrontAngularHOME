@@ -1,0 +1,744 @@
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" style="background-color: black !important;">
+        <a class="navbar-brand" href="#">
+            <h3 class="text-uppercase text-light fw-semibold ml-3">
+                home</h3>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hero">Bem vindo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">Depoimentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Time</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contato</a>
+                    </li>
+                </ul>
+                <div class="d-flex justify-content-end">
+                    <a href="#" class="btn btn-brand ms-lg-3" id="bg-hover">Empresas</a>
+                    <a href="#" class="btn btn-brand ms-lg-3" id="bg-hover">HOME FUNC</a>
+                </div>
+
+            </div>
+        </div>
+      </nav>
+    <!-- NAVBAR -->
+    <!-- <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <h3 class="text-uppercase text-light fw-semibold ">
+                    home</h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hero">Bem vindo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">Depoimentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Time</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contato</a>
+                    </li>
+                </ul>
+                <div class="d-flex justify-content-end">
+                    <a href="#" class="btn btn-brand ms-lg-3" id="bg-hover">Empresas</a>
+                    <a href="#" class="btn btn-brand ms-lg-3" id="bg-hover">HOME FUNC</a>
+                </div>
+
+            </div>
+        </div>
+    </nav> -->
+
+    <!-- cadastre-se main -->
+    <section id="hero" [ngStyle]="{'background-image': 'url(' + backgroundImageUrl + ')'}"
+        class="min-vh-100 d-flex align-items-center text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 data-aos="fade-left" class="text-uppercase text-white fw-semibold display-1">Bem Vindo a
+                        home</h1>
+                    <h5 class="text-white mt-3 mb-4" data-aos="fade-right"></h5>
+
+
+                    <div data-aos="fade-up" data-aos-delay="50">
+                        <a href="#" class="btn btn-brand me-2" id="bttn-cad">CADASTRE-SE</a>
+                    </div>
+                    <a href="" routerLink="/login" style="color:black">Já possui cadastro? Entre</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="50">
+                    <div class="section-title">
+                        <h1 class="display-4 fw-semibold">Nosso propósito</h1>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <img src="https://img.freepik.com/vetores-gratis/familia-cuidando-do-meio-ambiente_53876-43287.jpg?w=740&t=st=1683268985~exp=1683269585~hmac=1838318fb0dd11b641e99961ee8c96878f66785751e619bc9dc388e46e01176f"
+                                    alt="" srcset="">
+                            </div>
+                            <div class="col-sm-6 d-flex align-items-center">
+                                <p style="font-size: 19px;">Nossa missão é tornar sua empresa e você mais sustentáveis,
+                                    através de
+                                    ações que começam dentro do seu lar e
+                                    se expandem para o seu ambiente de trabalho, tudo isso de maneira simples e digital.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOLUÇÕES -->
+    <section id="services" class="section-padding border-top"
+        [ngStyle]="{'background-image': 'url(' + backgroundImageUrlRecife + ')'}">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
+                    <div class="section-title">
+                        <h1 class="display-4 fw-semibold" style="color: black;">SOLUÇÕES</h1>
+                        <div class="line"></div>
+                        <!-- <p>We love to craft digital experiances for brands rather than crap and more lorem ipsums and do
+                            crazy skills</p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 text-center">
+                <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="150" id="align">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <div class="iconbox">
+                            <i class="fa-solid fa-tree-city fa-bounce fa-2xl"></i>
+                        </div>
+                        <h5 class="mt-4 mb-3" style="color: black;">Projetos de Sustentabilidade</h5>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                            data-target="#exampleModalCenter" style="background: black;">
+                            Saiba Mais
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="250">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <div class="iconbox">
+                            <i class="fa-solid fa-handshake-simple fa-bounce fa-2xl"></i>
+                        </div>
+                        <h5 class="mt-4 mb-3" style="color: black;">Gestão Ambiental</h5>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#gestaoModal"
+                            style="background: black;">
+                            Saiba Mais
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 d-flex" data-aos="fade-down" data-aos-delay="350">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <div class="iconbox">
+                            <i class="fa-solid fa-person-chalkboard fa-bounce fa-2xl"></i>
+                        </div>
+                        <h5 class="mt-4 mb-3" style="color: black;">Consultoria Ambiental</h5>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                            data-target="#consultoriaModal" style="background: black;">
+                            Saiba Mais
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal projeto -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Projetos de sustentabilidade</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Um empreendimento que assume seu papel de responsabilidade socioambiental fortalece sua imagem no
+                    mercado e junto à sociedade, portanto, a Consultoria Ambiental é essencial para assinalar esse
+                    compromisso de sua empresa ou projeto com o meio ambiente.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal gestão -->
+    <div class="modal fade" id="gestaoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Gestão ambiental</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    A gestão ambiental é fundamental para garantir um desenvolvimento sustentável, que seja capaz de
+                    atender às necessidades das gerações presentes sem comprometer as necessidades das gerações futuras.
+                    A gestão ambiental envolve a identificação e avaliação dos impactos ambientais de uma determinada
+                    atividade, a implementação de medidas para mitigar ou eliminar esses impactos e a monitorização
+                    constante do desempenho ambiental da organização.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal consultoria -->
+    <div class="modal fade" id="consultoriaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Gestão ambiental</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    A consultoria ambiental é uma atividade que visa auxiliar empresas e organizações na gestão
+                    ambiental de suas atividades. A consultoria ambiental é uma atividade multidisciplinar, que envolve
+                    a análise de diversos aspectos relacionados ao meio ambiente, como a gestão de resíduos, a gestão de
+                    recursos hídricos, a gestão de energia, a gestão da biodiversidade, entre outros.
+                    A consultoria ambiental é fundamental para garantir que as empresas cumpram com suas
+                    responsabilidades ambientais e sejam socialmente responsáveis. Além disso, a consultoria ambiental
+                    pode trazer diversos benefícios para as empresas, como a redução de custos operacionais, a melhoria
+                    da imagem da empresa perante a sociedade e a possibilidade de conquistar novos mercados que
+                    valorizam empresas socialmente responsáveis.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- OUTROS PROJETOS -->
+    <section id="services" class="section-padding border-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
+                    <div class="section-title">
+                        <h1 class="display-4 fw-semibold">OUTROS PROJETOS</h1>
+                        <div class="line"></div>
+                        <!-- <p>We love to craft digital experiances for brands rather than crap and more lorem ipsums and do
+                            crazy skills</p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 text-center">
+                <div class="col-lg-6 col-sm-6" data-aos="fade-down" data-aos-delay="150" id="align">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <div class="iconbox">
+                            <i class="fa-solid fa-hand-holding-droplet fa-fade fa-2xl"></i>
+                        </div>
+                        <h5 class="mt-4 mb-3">Vamos cuidar da água:</h5>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#aguaModal">
+                            Saiba Mais
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6 d-flex" data-aos="fade-down" data-aos-delay="350">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <div class="iconbox">
+                            <i class="fa-solid fa-hands-holding-circle fa-fade fa-2xl"></i>
+                        </div>
+                        <h5 class="mt-4 mb-3">Eu pratico, vamos cuidar do Planeta:</h5>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#planetaModal">
+                            Saiba Mais
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal agua -->
+    <div class="modal fade" id="aguaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Vamos cuidar da água:</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Cuide da água: Práticas que auxiliam na economia de água em casa!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Saiba Mais</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal planeta -->
+    <div class="modal fade" id="planetaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Eu pratico, vamos cuidar do Planeta:</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Plante boas ações, colha RESULTADOS: Práticas que auxiliam na CONSCIENTIZAÇÃO DA SUSTENTABILIDADE!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Saiba Mais</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- COUNTER -->
+    <section id="counter" class="section-padding">
+        <div class="container text-center">
+            <div class="row g-4">
+                <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="150">
+                    <h1 class="text-white display-4">90+</h1>
+                    <h6 class="text-uppercase mb-0 text-white mt-3">Soluções desenvolvidas</h6>
+                </div>
+                <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="250">
+                    <h1 class="text-white display-4">8K+</h1>
+                    <h6 class="text-uppercase mb-0 text-white mt-3">Clientes</h6>
+                </div>
+                <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="350">
+                    <h1 class="text-white display-4">5M+</h1>
+                    <h6 class="text-uppercase mb-0 text-white mt-3">Economizados</h6>
+                </div>
+                <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="450">
+                    <h1 class="text-white display-4">10+</h1>
+                    <h6 class="text-uppercase mb-0 text-white mt-3">Membros do time</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- REVIEW -->
+    <section id="reviews" class="section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
+                    <div class="section-title">
+                        <h1 class="display-4 fw-semibold">Depoimentos de clientes</h1>
+                        <div class="line"></div>
+                        <p>Depoimentos dos nossos clientes conquistados ao longo desse último ano :)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row gy-5 gx-4">
+                <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="150">
+                    <div class="review">
+                        <div class="review-head p-4 bg-white theme-shadow">
+                            <div class="text-warning">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="mt-3">O sistema de gestão ambiental da sua HOME nos ajudou a identificar áreas
+                                em que poderíamos melhorar nosso desempenho ambiental e implementar medidas mais
+                                eficazes para proteger o meio ambiente. Além disso, sua equipe nos prestou um excelente
+                                suporte técnico e nos orientou durante todo o processo. Estamos muito satisfeitos com o
+                                serviço prestado.</p>
+                        </div>
+                        <div class="review-person mt-2 d-flex align-items-center">
+                            <img class="rounded-circle" src="" alt="">
+                            <div class="ms-3">
+                                <h5>Maria Silva </h5>
+                                <small>Diretora de Sustentabilidade da Empresa Verde S.A.</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="250">
+                    <div class="review">
+                        <div class="review-head p-4 bg-white theme-shadow">
+                            <div class="text-warning">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="mt-3">Desde que implementamos o sistema de gestão ambiental desenvolvido pela
+                                HOME,
+                                conseguimos reduzir significativamente nossos impactos ambientais e melhorar nossa
+                                imagem perante a sociedade. Estamos muito satisfeitos com os resultados alcançados e
+                                recomendamos seus serviços para outras empresas que desejam se tornar mais sustentáveis.
+                            </p>
+                        </div>
+                        <div class="review-person mt-2 d-flex align-items-center">
+                            <img class="rounded-circle" src="" alt="">
+                            <div class="ms-3">
+                                <h5>Pedro Souza</h5>
+                                <small>Gerente de Meio Ambiente da Indústria ABC Ltda.</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="350">
+                    <div class="review">
+                        <div class="review-head p-4 bg-white theme-shadow">
+                            <div class="text-warning">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="mt-3">A implementação do sistema de gestão ambiental da sua HOME foi um
+                                investimento fundamental para o crescimento sustentável do nosso negócio. Conseguimos
+                                reduzir nossos custos operacionais e melhorar nossa imagem perante a sociedade, o que
+                                nos trouxe novas oportunidades de negócios. Agradecemos pela parceria e recomendamos
+                                seus serviços para outras empresas que desejam ser socialmente responsáveis.</p>
+                        </div>
+                        <div class="review-person mt-2 d-flex align-items-center">
+                            <img class="rounded-circle" src="" alt="">
+                            <div class="ms-3">
+                                <h5>Ana Santos</h5>
+                                <small>Coordenadora de Sustentabilidade da ONG Amigos da Natureza.</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TIME -->
+    <section id="team" class="section-padding border-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
+                    <div class="section-title">
+                        <h1 class="display-4 fw-semibold">NOSSOS EXPERTS</h1>
+                        <div class="line"></div>
+                        <p>Apaixonados por inovação e sustentabilidade</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 text-center">
+                <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="150" id="align">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <img src="https://scontent-for1-1.xx.fbcdn.net/v/t31.18172-8/13217280_1048350601902141_2075404593666523809_o.png?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFaKL6C4BQGPo2PiOlI3W2lQTomVx9aSqNBOiZXH1pKo807oJyD3TnfRqnipx4MuDgHS5E89lpdyB9VquF3UcxE&_nc_ohc=roq469EYLasAX8aR9bQ&_nc_ht=scontent-for1-1.xx&oh=00_AfDC74TJZZ_nwUoVTNQXk9ttrc3sz2aAl6VyulSxELI-LA&oe=647C0CF9"
+                            alt="">
+                        <h5 class="mt-4 mb-3">Walmir Pereira de Lima</h5>
+                        <p>Desenvolvedor Fullstack Java</p>
+                        <!-- Button trigger modal -->
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="150" id="align">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <img src="https://scontent-for1-1.xx.fbcdn.net/v/t31.18172-8/13217280_1048350601902141_2075404593666523809_o.png?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFaKL6C4BQGPo2PiOlI3W2lQTomVx9aSqNBOiZXH1pKo807oJyD3TnfRqnipx4MuDgHS5E89lpdyB9VquF3UcxE&_nc_ohc=roq469EYLasAX8aR9bQ&_nc_ht=scontent-for1-1.xx&oh=00_AfDC74TJZZ_nwUoVTNQXk9ttrc3sz2aAl6VyulSxELI-LA&oe=647C0CF9"
+                            alt="">
+                        <h5 class="mt-4 mb-3">Lucas Tadeu</h5>
+                        <p>Desenvolvedor Fullstack Java</p>
+                        <!-- Button trigger modal -->
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="150" id="align">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <img src="https://scontent-for1-1.xx.fbcdn.net/v/t31.18172-8/13217280_1048350601902141_2075404593666523809_o.png?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFaKL6C4BQGPo2PiOlI3W2lQTomVx9aSqNBOiZXH1pKo807oJyD3TnfRqnipx4MuDgHS5E89lpdyB9VquF3UcxE&_nc_ohc=roq469EYLasAX8aR9bQ&_nc_ht=scontent-for1-1.xx&oh=00_AfDC74TJZZ_nwUoVTNQXk9ttrc3sz2aAl6VyulSxELI-LA&oe=647C0CF9"
+                            alt="">
+                        <h5 class="mt-4 mb-3">Renan Uchoa</h5>
+                        <p>Desenvolvedor Fullstack Java</p>
+                        <!-- Button trigger modal -->
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="150" id="align">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <img src="https://scontent-for1-1.xx.fbcdn.net/v/t31.18172-8/13217280_1048350601902141_2075404593666523809_o.png?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFaKL6C4BQGPo2PiOlI3W2lQTomVx9aSqNBOiZXH1pKo807oJyD3TnfRqnipx4MuDgHS5E89lpdyB9VquF3UcxE&_nc_ohc=roq469EYLasAX8aR9bQ&_nc_ht=scontent-for1-1.xx&oh=00_AfDC74TJZZ_nwUoVTNQXk9ttrc3sz2aAl6VyulSxELI-LA&oe=647C0CF9"
+                            alt="">
+                        <h5 class="mt-4 mb-3">Silas</h5>
+                        <p>Desenvolvedor Fullstack Java</p>
+                        <!-- Button trigger modal -->
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 text-center">
+                <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="150" id="align">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <img src="https://scontent-for1-1.xx.fbcdn.net/v/t31.18172-8/13217280_1048350601902141_2075404593666523809_o.png?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFaKL6C4BQGPo2PiOlI3W2lQTomVx9aSqNBOiZXH1pKo807oJyD3TnfRqnipx4MuDgHS5E89lpdyB9VquF3UcxE&_nc_ohc=roq469EYLasAX8aR9bQ&_nc_ht=scontent-for1-1.xx&oh=00_AfDC74TJZZ_nwUoVTNQXk9ttrc3sz2aAl6VyulSxELI-LA&oe=647C0CF9"
+                            alt="">
+                        <h5 class="mt-4 mb-3">Andrew</h5>
+                        <p>Desenvolvedor Fullstack Java</p>
+                        <!-- Button trigger modal -->
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="150" id="align">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <img src="https://scontent-for1-1.xx.fbcdn.net/v/t31.18172-8/13217280_1048350601902141_2075404593666523809_o.png?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFaKL6C4BQGPo2PiOlI3W2lQTomVx9aSqNBOiZXH1pKo807oJyD3TnfRqnipx4MuDgHS5E89lpdyB9VquF3UcxE&_nc_ohc=roq469EYLasAX8aR9bQ&_nc_ht=scontent-for1-1.xx&oh=00_AfDC74TJZZ_nwUoVTNQXk9ttrc3sz2aAl6VyulSxELI-LA&oe=647C0CF9"
+                            alt="">
+                        <h5 class="mt-4 mb-3">Horácio</h5>
+                        <p>Desenvolvedor Fullstack Java</p>
+                        <!-- Button trigger modal -->
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="150" id="align">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <img src="https://scontent-for1-1.xx.fbcdn.net/v/t31.18172-8/13217280_1048350601902141_2075404593666523809_o.png?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFaKL6C4BQGPo2PiOlI3W2lQTomVx9aSqNBOiZXH1pKo807oJyD3TnfRqnipx4MuDgHS5E89lpdyB9VquF3UcxE&_nc_ohc=roq469EYLasAX8aR9bQ&_nc_ht=scontent-for1-1.xx&oh=00_AfDC74TJZZ_nwUoVTNQXk9ttrc3sz2aAl6VyulSxELI-LA&oe=647C0CF9"
+                            alt="">
+                        <h5 class="mt-4 mb-3">João Guilherme</h5>
+                        <p>Desenvolvedor Fullstack Java</p>
+                        <!-- Button trigger modal -->
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="150" id="align">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <img src="https://scontent-for1-1.xx.fbcdn.net/v/t31.18172-8/13217280_1048350601902141_2075404593666523809_o.png?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFaKL6C4BQGPo2PiOlI3W2lQTomVx9aSqNBOiZXH1pKo807oJyD3TnfRqnipx4MuDgHS5E89lpdyB9VquF3UcxE&_nc_ohc=roq469EYLasAX8aR9bQ&_nc_ht=scontent-for1-1.xx&oh=00_AfDC74TJZZ_nwUoVTNQXk9ttrc3sz2aAl6VyulSxELI-LA&oe=647C0CF9"
+                            alt="">
+                        <h5 class="mt-4 mb-3">João Victor</h5>
+                        <p>Desenvolvedor Fullstack Java</p>
+                        <!-- Button trigger modal -->
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 text-center">
+                <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="150" id="align">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <img src="https://scontent-for1-1.xx.fbcdn.net/v/t31.18172-8/13217280_1048350601902141_2075404593666523809_o.png?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFaKL6C4BQGPo2PiOlI3W2lQTomVx9aSqNBOiZXH1pKo807oJyD3TnfRqnipx4MuDgHS5E89lpdyB9VquF3UcxE&_nc_ohc=roq469EYLasAX8aR9bQ&_nc_ht=scontent-for1-1.xx&oh=00_AfDC74TJZZ_nwUoVTNQXk9ttrc3sz2aAl6VyulSxELI-LA&oe=647C0CF9"
+                            alt="">
+                        <h5 class="mt-4 mb-3">Jobson Joaquim</h5>
+                        <p>Desenvolvedor Fullstack Java</p>
+                        <!-- Button trigger modal -->
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="150" id="align">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <img src="https://scontent-for1-1.xx.fbcdn.net/v/t31.18172-8/13217280_1048350601902141_2075404593666523809_o.png?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFaKL6C4BQGPo2PiOlI3W2lQTomVx9aSqNBOiZXH1pKo807oJyD3TnfRqnipx4MuDgHS5E89lpdyB9VquF3UcxE&_nc_ohc=roq469EYLasAX8aR9bQ&_nc_ht=scontent-for1-1.xx&oh=00_AfDC74TJZZ_nwUoVTNQXk9ttrc3sz2aAl6VyulSxELI-LA&oe=647C0CF9"
+                            alt="">
+                        <h5 class="mt-4 mb-3">LS</h5>
+                        <p>Desenvolvedor Fullstack Java</p>
+                        <!-- Button trigger modal -->
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="150" id="align">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <img src="https://scontent-for1-1.xx.fbcdn.net/v/t31.18172-8/13217280_1048350601902141_2075404593666523809_o.png?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFaKL6C4BQGPo2PiOlI3W2lQTomVx9aSqNBOiZXH1pKo807oJyD3TnfRqnipx4MuDgHS5E89lpdyB9VquF3UcxE&_nc_ohc=roq469EYLasAX8aR9bQ&_nc_ht=scontent-for1-1.xx&oh=00_AfDC74TJZZ_nwUoVTNQXk9ttrc3sz2aAl6VyulSxELI-LA&oe=647C0CF9"
+                            alt="">
+                        <h5 class="mt-4 mb-3">Paulo Henrique</h5>
+                        <p>Desenvolvedor Fullstack Java</p>
+                        <!-- Button trigger modal -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section-padding bg-dark" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
+                    <div class="section-title">
+                        <h1 class="display-4 text-white fw-semibold">Entre em contato</h1>
+                        <div class="line bg-white"></div>
+                        <p class="text-white">Compromissados com a sua verdade, fazendo valer o que você acredita, pois
+                            a sua ação gera solução</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center" data-aos="fade-down" data-aos-delay="250">
+                <div class="col-lg-8">
+                    <form action="#" class="row g-3 p-lg-5 p-4 bg-white theme-shadow" style="filter: invert();">
+                        <div class="form-group col-lg-6">
+                            <input type="text" class="form-control" placeholder="Primeiro nome">
+                        </div>
+                        <div class="form-group col-lg-6">
+                            <input type="text" class="form-control" placeholder="Último nome">
+                        </div>
+                        <div class="form-group col-lg-12">
+                            <input type="email" class="form-control" placeholder="E-mail">
+                        </div>
+                        <div class="form-group col-lg-12">
+                            <input type="text" class="form-control" placeholder="Assunto">
+                        </div>
+                        <div class="form-group col-lg-12">
+                            <textarea name="message" rows="5" class="form-control" placeholder="Messagem"></textarea>
+                        </div>
+                        <div class="form-group col-lg-12 d-grid">
+                            <button class="btn btn-brand">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
+                    <div class="section-title">
+                        <h1 class="display-4 fw-semibold">Novidades e artigos</h1>
+                        <div class="line"></div>
+                        <p>Aqui você acompanha novidades e artigos sobre nossa empresa e projetos</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4" data-aos="fade-down" data-aos-delay="150">
+                    <div class="team-member image-zoom">
+                        <div class="image-zoom-wrapper">
+                            <img src="" alt="">
+                        </div>
+                        <h5 class="mt-4">Sustentabilidade: como ser mais consciente no dia a dia</h5>
+                        <p>Para ser mais consciente em relação à sustentabilidade no dia a dia, é importante adotar
+                            hábitos simples, como reduzir o consumo de energia elétrica e água, separar corretamente os
+                            resíduos, utilizar transporte público ou bicicleta, entre outros. Pequenas mudanças no nosso
+                            comportamento podem fazer a diferença para o meio ambiente e para as próximas gerações...
+                        </p>
+                        <a href="#">Ler mais</a>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-down" data-aos-delay="250">
+                    <div class="team-member image-zoom">
+                        <div class="image-zoom-wrapper">
+                            <img src="" alt="">
+                        </div>
+                        <h5 class="mt-4">O papel das empresas na promoção da sustentabilidade</h5>
+                        <p>As empresas têm um papel fundamental na promoção da sustentabilidade, pois são responsáveis
+                            por grande parte dos impactos ambientais gerados pela atividade econômica. Para serem
+                            socialmente responsáveis, as empresas devem adotar práticas sustentáveis em suas atividades,
+                            como a gestão eficiente de recursos naturais, a redução da emissão de poluentes e a
+                            implementação de políticas de responsabilidade social...</p>
+                        <a href="#">Ler mais</a>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-down" data-aos-delay="350">
+                    <div class="team-member image-zoom">
+                        <div class="image-zoom-wrapper">
+                            <img src="" alt="">
+                        </div>
+                        <h5 class="mt-4">Sustentabilidade: uma questão urgente para a preservação do meio ambiente</h5>
+                        <p>A sustentabilidade é uma questão urgente para a preservação do meio ambiente e para a
+                            garantia de um futuro mais justo e equilibrado para as próximas gerações. Ações imediatas
+                            são necessárias para minimizar os impactos ambientais gerados pela atividade humana, como a
+                            redução da emissão de gases do efeito estufa, a proteção da biodiversidade e a gestão
+                            eficiente dos recursos naturais. A sustentabilidade deve ser uma preocupação de todos,
+                            governos, empresas e indivíduos, para garantir um mundo mais sustentável para todos..
+                        </p>
+                        <a href="#">Ler mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="bg-dark" style="background-color: black !important;">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row gy-5">
+                    <div class="col-lg-4 col-sm-6">
+                        <h5 class="mb-0 text-white">SERVIÇOS</h5>
+                        <div class="line"></div>
+                        <ul>
+                            <li><a href="#">PROJETOS DE SUSTENTABILIDADE</a></li>
+                            <li><a href="#">GESTÃO AMBIENTAL</a></li>
+                            <li><a href="#">CONSULTORIA AMBIENTAL</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <h5 class="mb-0 text-white">SOBRE</h5>
+                        <div class="line"></div>
+                        <ul>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Serviços</a></li>
+                            <li><a href="#">Companhia</a></li>
+                            <li><a href="#">Carreira</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <h5 class="mb-0 text-white">CONTATO</h5>
+                        <div class="line"></div>
+                        <ul>
+                            <li>Recife, PE</li>
+                            <li>(81) 5863 - 3017</li>
+                            <li>www.homesolutions4c.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row g-4 justify-content-between">
+                    <div class="col-auto">
+                        <p class="mb-0">Designed with 💜 By <a
+                                href="https://www.youtube.com/channel/UCYMEEnLzGGGIpQQ3Nu_sBsQ">SALMAN</a></p>
+                        <p>Modified and redesigned by WALLIOTS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>

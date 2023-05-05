@@ -6,7 +6,7 @@
 }
 
 .bg-light {
-    background-color: #fff !important;
+    background-color: #a0a0a078 !important;
 }
 
 .btn-style-moov {
@@ -36,4 +36,7 @@ ngb-pagination ::ng-deep ul > li:not(.active) > a {
 
 ngb-pagination ::ng-deep ul > li.active > a {
     background-color:#535353 !important;
+}
+#color-div{
+  background-color: #a0a0a078 !important;
 }

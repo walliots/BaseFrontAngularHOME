@@ -11748,7 +11748,6 @@ a:focus {
   box-shadow: none;
   margin-left: 8px;
   margin-right: 8px;
-  background-color: #535353;
   border-radius: 10px;
   color: white !important;
 }
@@ -11925,11 +11924,10 @@ h5,
 #sidebar ul li>ul li {
   font-size: 14px;
 }
-
+/* atenção aqui */
 #sidebar ul li a {
   padding: 10px 30px;
   display: block;
-  color: #535353;
 }
 
 #sidebar ul li a span {
@@ -12033,7 +12031,7 @@ a[data-toggle="collapse"] {
 
 
 #homeSubmenu {
-  background: #535353;
+  background: #3f6ad8b0;
   border-radius: 4.39626px;
   height: 252px;
 }

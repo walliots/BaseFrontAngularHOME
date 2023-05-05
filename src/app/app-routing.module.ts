@@ -11,8 +11,11 @@ import { NovoUsuarioComponent } from './components/cadastro-usuario/novo-usuario
 import { LoginComponent } from './components/login/login.component';
 
 import { VerificacaoLoginGuard } from './verificacao-login.guard';
+import { LandingPageComponent } from './components/landing-page/landing-page.component';
 
 export const routes: Routes = [
+	{path: '', redirectTo: '/app-landing-page', pathMatch: 'full'},
+	{path: 'app-landing-page', component: LandingPageComponent},
 	{ path: 'login', component: LoginComponent },
 	{
 		path: '',

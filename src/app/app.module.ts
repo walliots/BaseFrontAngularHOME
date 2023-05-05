@@ -28,6 +28,8 @@ import { FilePondModule, registerPlugin } from 'ngx-filepond';
 import * as FilePondPluginFileValidateType from 'filepond-plugin-file-validate-type';
 import * as FilePondPluginImagePreview from 'filepond-plugin-image-preview';
 import * as FilePondPluginFileEncode from 'filepond-plugin-file-encode';
+import { LandingPageComponent } from './components/landing-page/landing-page.component';
+import { CadastroEmpresaComponent } from './components/cadastro-empresa/cadastro-empresa.component';
 registerPlugin(FilePondPluginFileValidateType);
 registerPlugin(FilePondPluginImagePreview);
 registerPlugin(FilePondPluginFileEncode);
@@ -47,6 +49,8 @@ registerPlugin(FilePondPluginFileEncode);
     CadastroDespesaComponent,
     NovaDespesaComponent,
     EditarDespesaComponent,
+    LandingPageComponent,
+    CadastroEmpresaComponent,
 
   ],
   imports: [
