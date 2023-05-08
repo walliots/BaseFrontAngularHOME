@@ -351,3 +351,54 @@ footer .line {
 #bg-hover:hover{
     background-color: #212529;
 }
+
+.btn-cadastrar{
+    width: 380px;
+    height: 90px;
+    font-size: 35px;
+    border-radius: 50px 50px 50px 50px;
+    background: linear-gradient(90deg, rgba(1,186,18,1) 0%, rgba(40,170,1,1) 50%, rgba(178,203,0,1) 100%);
+}
+
+.card-proposito{
+    background-color: rgba(40, 170, 1, 0.7);
+    border-radius: 10px 10px 10px 10px;
+    float: right;
+    font-size: 30px;
+}
+
+.text-desc{
+    text-decoration: none;
+    opacity: 1;
+}
+
+.btn-pos{
+    position: absolute;
+    right: 80px;
+    width: 230px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.btn-saibaMais{
+    border-radius: 50px 50px 50px 50px;
+    background: linear-gradient(90deg, rgba(1,186,18,1) 0%, rgba(40,170,1,1) 50%, rgba(178,203,0,1) 100%);
+}
+
+.proposito-container {
+    border-bottom: 5px solid green;
+    border-radius: 5px;
+    display: inline-block;
+    padding-bottom: 2px;
+}
+
+.nosso-proposito-logo {
+    left: -500px;
+}
+
+.solucoes-container {
+    border-bottom: 5px solid green;
+    border-radius: 5px;
+    display: inline-block;
+    padding-bottom: 2px;
+}

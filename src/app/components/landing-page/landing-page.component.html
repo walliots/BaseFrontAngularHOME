@@ -85,57 +85,66 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1 data-aos="fade-left" class="text-uppercase text-white fw-semibold display-1">Bem Vindo a
-                        home</h1>
-                    <h5 class="text-white mt-3 mb-4" data-aos="fade-right"></h5>
-
-
-                    <div data-aos="fade-up" data-aos-delay="50">
-                        <a href="#" class="btn btn-brand me-2" id="bttn-cad">CADASTRE-SE</a>
+                    <h1 data-aos="fade-left" class="text-uppercase text-white fw-semibold display-1">home</h1>
+                    <h1 class="text-white">Sua ação, gera solução!</h1>
+                    <h5 class="text-white mt-5 mb-4" data-aos="fade-right">Uma empresa sustentável é aquela que 
+                        conhece suas operações e se empenha em usar bem seus recursos para deixar um resultado 
+                        positivo na sociedade com políticas que resultem no seu desenvolvimento contínuo.
+                    </h5>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn btn-primary btn-cadastrar" type="button">Cadastre-se
+                            <i class="fa-solid fa-plug ml-3" style="color: green"></i>
+                        </button>
                     </div>
-                    <a href="" routerLink="/login" style="color:black">Já possui cadastro? Entre</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="50">
-                    <div class="section-title">
-                        <h1 class="display-4 fw-semibold">Nosso propósito</h1>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <img src="https://img.freepik.com/vetores-gratis/familia-cuidando-do-meio-ambiente_53876-43287.jpg?w=740&t=st=1683268985~exp=1683269585~hmac=1838318fb0dd11b641e99961ee8c96878f66785751e619bc9dc388e46e01176f"
-                                    alt="" srcset="">
-                            </div>
-                            <div class="col-sm-6 d-flex align-items-center">
-                                <p style="font-size: 19px;">Nossa missão é tornar sua empresa e você mais sustentáveis,
-                                    através de
-                                    ações que começam dentro do seu lar e
-                                    se expandem para o seu ambiente de trabalho, tudo isso de maneira simples e digital.
-                                </p>
-                            </div>
-                        </div>
+                    <div class="mt-3">
+                        <span class="text-white" style="font-size: x-large;">
+                            Já possui cadastro?
+                            <a class="text-uppercase" style="color: #297A12; text-decoration: underline; font-weight: bold;" href="">entre</a> 
+                        </span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+   <!-- ABOUT -->
+   <section id="about" class="section-padding" [ngStyle]="{'background-image': 'url(' + backgroundImageDemaisTelas + ')'}">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="50">
+                <div class="section-title">
+                    <img class="" src="https://imgur.com/61tciKy.png" alt="">
+                    <h1 class="display-4 fw-semibold" style="color: white;">
+                        <span class="proposito-container">Nosso Pr</span>opósito
+                    </h1>
+                </div>
+            </div>
+            <img src="https://imgur.com/AZkwUMI.png" class="ml-3" alt="">
+            <div class="card-proposito col-6 mx-auto">
+                <p style="color: aliceblue;">Nossa missão é tornar você mais sustentável, através de ações que começam dentro do seu lar
+                    e se expandem para o seu ambiente de trabalho, tudo isso de maneira simples e digital.
+                </p>
+            </div>
+            <div class="col-12 mt-4">
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary btn-cadastrar btn-pos" type="button">Cadastre-se
+                        <i class="fa-solid fa-plug" style="color: green"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- SOLUÇÕES -->
     <section id="services" class="section-padding border-top"
-        [ngStyle]="{'background-image': 'url(' + backgroundImageUrlRecife + ')'}">
+        [ngStyle]="{'background-image': 'url(' + backgroundImageDemaisTelas + ')'}">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
                     <div class="section-title">
-                        <h1 class="display-4 fw-semibold" style="color: black;">SOLUÇÕES</h1>
-                        <div class="line"></div>
-                        <!-- <p>We love to craft digital experiances for brands rather than crap and more lorem ipsums and do
-                            crazy skills</p> -->
+                        <img class="" src="https://imgur.com/61tciKy.png" alt="">
+                        <h1 class="display-4 fw-semibold" style="color: white;"><span class="solucoes-container">SOLUÇÕE</span>S</h1>
                     </div>
                 </div>
             </div>
@@ -143,12 +152,12 @@
                 <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="150" id="align">
                     <div class="service theme-shadow p-lg-5 p-4">
                         <div class="iconbox">
-                            <i class="fa-solid fa-tree-city fa-bounce fa-2xl"></i>
+                            <i class="fa-solid fa-tree-city fa-bounce fa-2xl" style="color: white;"></i>
                         </div>
-                        <h5 class="mt-4 mb-3" style="color: black;">Projetos de Sustentabilidade</h5>
+                        <h5 class="mt-4 mb-3" style="color: white;">Projetos de Sustentabilidade</h5>
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-toggle="modal"
-                            data-target="#exampleModalCenter" style="background: black;">
+                        <button type="button" class="btn btn-primary btn-saibaMais" data-toggle="modal"
+                            data-target="#exampleModalCenter">
                             Saiba Mais
                         </button>
                     </div>
@@ -156,12 +165,11 @@
                 <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="250">
                     <div class="service theme-shadow p-lg-5 p-4">
                         <div class="iconbox">
-                            <i class="fa-solid fa-handshake-simple fa-bounce fa-2xl"></i>
+                            <i class="fa-solid fa-handshake-simple fa-bounce fa-2xl" style="color: white;"></i>
                         </div>
-                        <h5 class="mt-4 mb-3" style="color: black;">Gestão Ambiental</h5>
+                        <h5 class="mt-4 mb-3" style="color: white;">Gestão Ambiental</h5>
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#gestaoModal"
-                            style="background: black;">
+                        <button type="button" class="btn btn-primary btn-saibaMais" data-toggle="modal" data-target="#gestaoModal">
                             Saiba Mais
                         </button>
                     </div>
@@ -169,12 +177,12 @@
                 <div class="col-lg-4 col-sm-6 d-flex" data-aos="fade-down" data-aos-delay="350">
                     <div class="service theme-shadow p-lg-5 p-4">
                         <div class="iconbox">
-                            <i class="fa-solid fa-person-chalkboard fa-bounce fa-2xl"></i>
+                            <i class="fa-solid fa-person-chalkboard fa-bounce fa-2xl" style="color: white;"></i>
                         </div>
-                        <h5 class="mt-4 mb-3" style="color: black;">Consultoria Ambiental</h5>
+                        <h5 class="mt-4 mb-3" style="color: white;">Consultoria Ambiental</h5>
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-toggle="modal"
-                            data-target="#consultoriaModal" style="background: black;">
+                        <button type="button" class="btn btn-primary btn-saibaMais" data-toggle="modal"
+                            data-target="#consultoriaModal">
                             Saiba Mais
                         </button>
                     </div>
@@ -261,15 +269,12 @@
     </div>
 
     <!-- OUTROS PROJETOS -->
-    <section id="services" class="section-padding border-top">
+    <section id="services" class="section-padding border-top " [ngStyle]="{'background-image': 'url(' + backgroundImageDemaisTelas + ')'}">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
                     <div class="section-title">
-                        <h1 class="display-4 fw-semibold">OUTROS PROJETOS</h1>
-                        <div class="line"></div>
-                        <!-- <p>We love to craft digital experiances for brands rather than crap and more lorem ipsums and do
-                            crazy skills</p> -->
+                        <h1 class="display-4 fw-semibold" style="color: white">OUTROS PROJETOS</h1>
                     </div>
                 </div>
             </div>
