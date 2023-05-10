@@ -1,1 +1,81 @@
-<p>cadastro-empresa works!</p>
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" style="background-color: black !important;">
+        <a class="navbar-brand" href="#">
+            <h3 class="text-uppercase text-light fw-semibold ml-3">
+                home</h3>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hero">Bem vindo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">Depoimentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Time</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contato</a>
+                    </li>
+                </ul>
+                <div class="d-flex justify-content-end">
+                    <a href="#" class="btn btn-brand ms-lg-3" id="bg-hover">Empresas</a>
+                    <a href="#" class="btn btn-brand ms-lg-3" id="bg-hover">HOME FUNC</a>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- cadastre-se main -->
+    <section id="hero" [ngStyle]="{'background-image': 'url(' +  backgroundImageDemaisTelas + ')'}"
+        class="min-vh-100 d-flex align-items-center text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12" id="form-login">
+
+                    <div class="form-group">
+                        <label for="cep">CEP</label>
+                        <input type="text" class="form-control" id="cep" name="cep" [(ngModel)]="cep"
+                            (input)="buscarEndereco(cep)" (blur)="cep === '' && limparCampos()">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" class="form-control" id="cidade" name="cidade" [(ngModel)]="cidade">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="logradouro">Logradouro</label>
+                        <input type="text" class="form-control" id="logradouro" name="logradouro"
+                            [(ngModel)]="logradouro">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="estado">Estado</label>
+                        <input type="text" class="form-control" id="estado">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</body>

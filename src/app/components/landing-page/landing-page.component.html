@@ -5,8 +5,9 @@
             <h3 class="text-uppercase text-light fw-semibold ml-3">
                 home</h3>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
@@ -37,7 +38,7 @@
 
             </div>
         </div>
-      </nav>
+    </nav>
     <!-- NAVBAR -->
     <!-- <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
@@ -79,6 +80,8 @@
         </div>
     </nav> -->
 
+
+
     <!-- cadastre-se main -->
     <section id="hero" [ngStyle]="{'background-image': 'url(' + backgroundImageUrl + ')'}"
         class="min-vh-100 d-flex align-items-center text-center">
@@ -87,19 +90,22 @@
                 <div class="col-12">
                     <h1 data-aos="fade-left" class="text-uppercase text-white fw-semibold display-1">home</h1>
                     <h1 class="text-white">Sua ação, gera solução!</h1>
-                    <h5 class="text-white mt-5 mb-4" data-aos="fade-right">Uma empresa sustentável é aquela que 
-                        conhece suas operações e se empenha em usar bem seus recursos para deixar um resultado 
+                    <h5 class="text-white mt-5 mb-4" data-aos="fade-right">Uma empresa sustentável é aquela que
+                        conhece suas operações e se empenha em usar bem seus recursos para deixar um resultado
                         positivo na sociedade com políticas que resultem no seu desenvolvimento contínuo.
                     </h5>
-                    <div class="d-grid gap-2 col-6 mx-auto">
-                        <button class="btn btn-primary btn-cadastrar" type="button">Cadastre-se
-                            <i class="fa-solid fa-plug ml-3" style="color: green"></i>
-                        </button>
-                    </div>
                     <div class="mt-3">
+                        <div data-aos="fade-up" data-aos-delay="50">
+                            <button href="#" class="btn btn-brand me-2" id="bttn-cad"
+                                routerLink="/app-cadastro-empresa">CADASTRE-SE
+                                <i class="fa-solid fa-plug ml-3" style="color: green"></i>
+                            </button>
+                        </div>
                         <span class="text-white" style="font-size: x-large;">
                             Já possui cadastro?
-                            <a class="text-uppercase" style="color: #297A12; text-decoration: underline; font-weight: bold;" href="">entre</a> 
+                            <a class="text-uppercase"
+                                style="color: #297A12; text-decoration: underline; font-weight: bold;"
+                                routerLink="/login">entre</a>
                         </span>
                     </div>
                 </div>
@@ -107,34 +113,37 @@
         </div>
     </section>
 
-   <!-- ABOUT -->
-   <section id="about" class="section-padding" [ngStyle]="{'background-image': 'url(' + backgroundImageDemaisTelas + ')'}">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="50">
-                <div class="section-title">
-                    <img class="" src="https://imgur.com/61tciKy.png" alt="">
-                    <h1 class="display-4 fw-semibold" style="color: white;">
-                        <span class="proposito-container">Nosso Pr</span>opósito
-                    </h1>
+
+    <!-- ABOUT -->
+    <section id="about" class="section-padding"
+        [ngStyle]="{'background-image': 'url(' + backgroundImageDemaisTelas + ')'}">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="50">
+                    <div class="section-title">
+                        <img class="" src="https://imgur.com/61tciKy.png" alt="">
+                        <h1 class="display-4 fw-semibold" style="color: white;">
+                            <span class="proposito-container">Nosso Pr</span>opósito
+                        </h1>
+                    </div>
                 </div>
-            </div>
-            <img src="https://imgur.com/AZkwUMI.png" class="ml-3" alt="">
-            <div class="card-proposito col-6 mx-auto">
-                <p style="color: aliceblue;">Nossa missão é tornar você mais sustentável, através de ações que começam dentro do seu lar
-                    e se expandem para o seu ambiente de trabalho, tudo isso de maneira simples e digital.
-                </p>
-            </div>
-            <div class="col-12 mt-4">
-                <div class="d-grid gap-2">
-                    <button class="btn btn-primary btn-cadastrar btn-pos" type="button">Cadastre-se
-                        <i class="fa-solid fa-plug" style="color: green"></i>
-                    </button>
+                <img src="https://imgur.com/AZkwUMI.png" class="ml-3" alt="">
+                <div class="card-proposito col-6 mx-auto">
+                    <p style="color: aliceblue;">Nossa missão é tornar você mais sustentável, através de ações que
+                        começam dentro do seu lar
+                        e se expandem para o seu ambiente de trabalho, tudo isso de maneira simples e digital.
+                    </p>
+                </div>
+                <div class="col-12 mt-4">
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary btn-cadastrar btn-pos" type="button">Cadastre-se
+                            <i class="fa-solid fa-plug" style="color: green"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- SOLUÇÕES -->
     <section id="services" class="section-padding border-top"
@@ -144,7 +153,8 @@
                 <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
                     <div class="section-title">
                         <img class="" src="https://imgur.com/61tciKy.png" alt="">
-                        <h1 class="display-4 fw-semibold" style="color: white;"><span class="solucoes-container">SOLUÇÕE</span>S</h1>
+                        <h1 class="display-4 fw-semibold" style="color: white;"><span
+                                class="solucoes-container">SOLUÇÕE</span>S</h1>
                     </div>
                 </div>
             </div>
@@ -169,7 +179,8 @@
                         </div>
                         <h5 class="mt-4 mb-3" style="color: white;">Gestão Ambiental</h5>
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary btn-saibaMais" data-toggle="modal" data-target="#gestaoModal">
+                        <button type="button" class="btn btn-primary btn-saibaMais" data-toggle="modal"
+                            data-target="#gestaoModal">
                             Saiba Mais
                         </button>
                     </div>
@@ -269,7 +280,8 @@
     </div>
 
     <!-- OUTROS PROJETOS -->
-    <section id="services" class="section-padding border-top " [ngStyle]="{'background-image': 'url(' + backgroundImageDemaisTelas + ')'}">
+    <section id="services" class="section-padding border-top "
+        [ngStyle]="{'background-image': 'url(' + backgroundImageDemaisTelas + ')'}">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">

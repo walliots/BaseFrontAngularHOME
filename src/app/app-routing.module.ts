@@ -12,10 +12,12 @@ import { LoginComponent } from './components/login/login.component';
 
 import { VerificacaoLoginGuard } from './verificacao-login.guard';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
+import { CadastroEmpresaComponent } from './components/cadastro-empresa/cadastro-empresa.component';
 
 export const routes: Routes = [
 	{path: '', redirectTo: '/app-landing-page', pathMatch: 'full'},
 	{path: 'app-landing-page', component: LandingPageComponent},
+	{path: 'app-cadastro-empresa', component: CadastroEmpresaComponent},
 	{ path: 'login', component: LoginComponent },
 	{
 		path: '',
@@ -40,39 +42,6 @@ export const routes: Routes = [
 				path: 'editar-usuario/:id',
 				component: EditarUsuarioComponent,
 			},
-			{
-				path: 'cadastro-setores',
-				component: CadastroSetoresComponent,
-			},
-			{
-				path: 'cadastro-setores/:id',
-				component: CadastroSetoresComponent,
-			},
-			{
-				path: 'novo-setor',
-				component: NovoSetorComponent,
-			},
-			{
-				path: 'novo-setor/:id',
-				component: NovoSetorComponent,
-			},
-			{
-				path: 'cadastro-despesa',
-				component: CadastroDespesaComponent,
-			},
-			{
-				path: 'cadastro-despesa/:id',
-				component: CadastroDespesaComponent,
-			},
-			{
-				path: 'nova-despesa',
-				component: NovaDespesaComponent,
-			},
-			{
-				path: 'editar-despesa',
-				component: EditarDespesaComponent,
-			},
-
 		],
 		canActivate: [VerificacaoLoginGuard]
 	},
