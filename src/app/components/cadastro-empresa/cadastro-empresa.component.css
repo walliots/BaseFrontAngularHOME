@@ -407,4 +407,15 @@ footer .line {
     color: white;
     font-size: 24px;
     border-radius: 55px;
+    height: 800px;
+}
+
+@media screen and (max-width: 767px) {
+    #form-login {
+        background-color: #3e62215e;
+        color: white;
+        font-size: 24px;
+        border-radius: 55px;
+        height: 1146px;
+    }
 }

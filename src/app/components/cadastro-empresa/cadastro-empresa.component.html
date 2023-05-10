@@ -44,36 +44,72 @@
     <!-- cadastre-se main -->
     <section id="hero" [ngStyle]="{'background-image': 'url(' +  backgroundImageDemaisTelas + ')'}"
         class="min-vh-100 d-flex align-items-center text-center">
-        <div class="container">
+        <form class="container" id="form-login" [formGroup]="gerarForm">
+            <h1 class="text-white">
+                Cadastre-se
+            </h1>
             <div class="row">
-                <div class="col-12" id="form-login">
-
+                <div class="form-group" class="col-lg-6">
+                    <label for="cep">Pessoa Física ou Jurídica?</label>
                     <div class="form-group">
-                        <label for="cep">CEP</label>
-                        <input type="text" class="form-control" id="cep" name="cep" [(ngModel)]="cep"
-                            (input)="buscarEndereco(cep)" (blur)="cep === '' && limparCampos()">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="cidade">Cidade</label>
-                        <input type="text" class="form-control" id="cidade" name="cidade" [(ngModel)]="cidade">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="logradouro">Logradouro</label>
-                        <input type="text" class="form-control" id="logradouro" name="logradouro"
-                            [(ngModel)]="logradouro">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="estado">Estado</label>
-                        <input type="text" class="form-control" id="estado">
+                        <select class="custom-select" required>
+                            <option value="1">Física</option>
+                            <option value="2">Jurídica</option>
+                        </select>
+                        <div class="invalid-feedback">Example invalid custom select feedback</div>
                     </div>
                 </div>
-
+                <div class="form-group" class="col-lg-6">
+                    <label for="cep">Nome</label>
+                    <input class="form-control" formControlName="nome" type="text" id="inputName">
+                </div>
+                <div class="form-group" class="col-lg-6">
+                    <label for="cep">CPF ou CNPJ</label>
+                    <input type="text" class="form-control" id="cpf" name="cpf">
+                </div>
+                <div class="form-group" class="col-lg-6">
+                    <label for="cep">E-mail</label>
+                    <input type="email" class="form-control" formControlName="login" type="text">
+                </div>
             </div>
-
-        </div>
+            <hr style="border: 2px solid #0000007d;">
+            <div class="row">
+                <div class="form-group" class="col-lg-6">
+                    <label for="cep">CEP</label>
+                    <input type="text" class="form-control" id="cep" name="cep" [(ngModel)]="cep"
+                        (input)="buscarEndereco(cep)" (blur)="cep === '' && limparCampos()">
+                </div>
+                <div class="form-group" class="col-lg-6">
+                    <label for="cidade">Cidade</label>
+                    <input readonly type="text" class="form-control" id="cidade" name="cidade" [(ngModel)]="cidade">
+                </div>
+                <div class="form-group" class="col-lg-6">
+                    <label for="logradouro">Logradouro</label>
+                    <input readonly type="text" class="form-control" id="logradouro" name="logradouro"
+                        [(ngModel)]="logradouro">
+                </div>
+                <div class="form-group" class="col-lg-6">
+                    <label for="estado">Estado</label>
+                    <input readonly type="text" class="form-control" id="estado" name="estado" [(ngModel)]="estado">
+                </div>
+                <div class="form-group" class="col-lg-6">
+                    <label for="estado">Número</label>
+                    <input readonly type="text" class="form-control" id="numeroCsa" name="estado" [(ngModel)]="estado">
+                </div>
+            </div>
+            <hr style="border: 2px solid #0000007d;">
+            <div class="row">
+                <div class="form-group" class="col-lg-12">
+                    <label for="cep">Senha</label>
+                    <input type="password" class="form-control" formControlName="senha" type="password">
+                </div>
+                
+            </div>
+            <hr style="border: 2px solid #0000007d;">
+            <div class="form-group" class="">
+                <button type="submit" class="btn btn-primary mb-2 col-lg-12 mt-2" (click)="saveUser()">Enviar cadastro</button>
+            </div>
+        </form>
 
     </section>
 

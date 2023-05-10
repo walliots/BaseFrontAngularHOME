@@ -5,8 +5,8 @@
 
 export const environment = {
   production: false,
-  baseUrl: 'http://localhost:8080/api',
-  baseApiUrl: 'http://localhost:8080/api'
+  baseUrl: 'https://8e2b166b3a5174de99c066e8072374e7.loophole.site',
+  baseApiUrl: 'https://8e2b166b3a5174de99c066e8072374e7.loophole.site'
 };
 
 // export const environment = {

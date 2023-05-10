@@ -99,37 +99,41 @@
 
 
 
-     <!-- cadastre-se main -->
-     <section id="hero" [ngStyle]="{'background-image': 'url(' + backgroundImageUrl + ')'}"
-     class="min-vh-100 d-flex align-items-center text-center">
-     <div class="container">
-         <div class="row">
-             <div class="col-12">
-                 <h1 data-aos="fade-left" class="text-uppercase text-white fw-semibold display-1">
-                     home</h1>
-                 <img class="" style="transform: translateX(-140px);" src="https://imgur.com/61tciKy.png" alt="">
-                 <h1 class="text-white">
-                     Sua ação, gera solução!
-                 </h1>
-                 <h5 class="text-white mt-5 mb-4" data-aos="fade-right">Uma empresa sustentável é aquela que 
-                     conhece suas operações e se empenha em usar bem seus recursos para deixar um resultado 
-                     positivo na sociedade com políticas que resultem no seu desenvolvimento contínuo.
-                 </h5>
-                 <div class="d-grid gap-2 col-6 mx-auto">
-                     <button class="btn btn-primary btn-cadastrar" type="button">Cadastre-se
-                         <i class="fa-solid fa-plug ml-3" style="color: green"></i>
-                     </button>
-                 </div>
-                 <div class="mt-3">
-                     <span class="text-white" style="font-size: x-large;">
-                         Já possui cadastro?
-                         <a class="text-uppercase" style="color: #297A12; text-decoration: underline; font-weight: bold;" href="">entre</a> 
-                     </span>
-                 </div>
-             </div>
-         </div>
-     </div>
- </section>
+    <!-- cadastre-se main -->
+    <section id="hero" [ngStyle]="{'background-image': 'url(' + backgroundImageUrl + ')'}"
+        class="min-vh-100 d-flex align-items-center text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 data-aos="fade-left" class="text-uppercase text-white fw-semibold display-1">
+                        home</h1>
+                    <img class="" style="transform: translateX(-140px);" src="https://imgur.com/61tciKy.png" alt="">
+                    <h1 class="text-white">
+                        Sua ação, gera solução!
+                    </h1>
+                    <h5 class="text-white mt-5 mb-4" data-aos="fade-right">Uma empresa sustentável é aquela que
+                        conhece suas operações e se empenha em usar bem seus recursos para deixar um resultado
+                        positivo na sociedade com políticas que resultem no seu desenvolvimento contínuo.
+                    </h5>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <div data-aos="fade-up" data-aos-delay="50">
+                            <button href="#" class="btn btn-brand me-2" id="bttnCadLog"
+                                routerLink="/app-cadastro-empresa">CADASTRE-SE
+                                <i class="fa-solid fa-plug ml-3" style="color: green"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <span class="text-white" style="font-size: x-large;">
+                            Já possui cadastro?
+                            <a class="text-uppercase"
+                                style="color: #297A12; text-decoration: underline; font-weight: bold;" href="">entre</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <!-- ABOUT -->
@@ -171,7 +175,8 @@
                 <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
                     <div class="section-title">
                         <img class="" src="https://imgur.com/61tciKy.png" alt="">
-                        <h1 class="display-4 fw-semibold" style="color: white;"><span class="solucoes-container">SOLUÇÕE</span>S</h1>
+                        <h1 class="display-4 fw-semibold" style="color: white;"><span
+                                class="solucoes-container">SOLUÇÕE</span>S</h1>
                     </div>
                 </div>
             </div>
@@ -223,9 +228,10 @@
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content container-fluid"  style="background-color: rgba(102, 174, 44, 0.9);">
+            <div class="modal-content container-fluid" style="background-color: rgba(102, 174, 44, 0.9);">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle" style="text-decoration:solid; color: white;">Projetos de sustentabilidade</h5>
+                    <h5 class="modal-title" id="exampleModalLongTitle" style="text-decoration:solid; color: white;">
+                        Projetos de sustentabilidade</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -237,21 +243,25 @@
                         </div>
                         <div class="col-md-6 ml-auto">
                             <h5 style="color: white;">
-                            Um empreendimento que assume seu papel de responsabilidade socioambiental fortalece sua imagem no
-                            mercado e junto à sociedade, portanto, a Consultoria Ambiental é essencial para assinalar esse
-                            compromisso de sua empresa ou projeto com o meio ambiente.
+                                Um empreendimento que assume seu papel de responsabilidade socioambiental fortalece sua
+                                imagem no
+                                mercado e junto à sociedade, portanto, a Consultoria Ambiental é essencial para
+                                assinalar esse
+                                compromisso de sua empresa ou projeto com o meio ambiente.
                             </h5>
                         </div>
                     </div>
                     <h5 class="mt-2" style="text-decoration: none; color: white;">ANÁLISE DE RISCO AMBIENTAL</h5>
                     <span style="text-decoration: none; color: white;">
-                        A Análise de Risco Ambiental apresenta soluções exatas e bem definidas para a remediação de uma área 
-                        contaminada, o que 
-                        culmina por evitar tanto gastos desnecessários quanto a adoção de medidas pouco eficientes para a 
+                        A Análise de Risco Ambiental apresenta soluções exatas e bem definidas para a remediação de uma
+                        área
+                        contaminada, o que
+                        culmina por evitar tanto gastos desnecessários quanto a adoção de medidas pouco eficientes para
+                        a
                         reparação desses possíveis problemas.
                     </span>
 
-                    
+
                 </div>
             </div>
         </div>
@@ -306,13 +316,15 @@
     </div>
 
     <!-- OUTROS PROJETOS -->
-    <section id="services" class="section-padding border-top " [ngStyle]="{'background-image': 'url(' + backgroundImageDemaisTelas + ')'}">
+    <section id="services" class="section-padding border-top "
+        [ngStyle]="{'background-image': 'url(' + backgroundImageDemaisTelas + ')'}">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
                     <div class="section-title">
                         <img style="transform: translateX(-140px);" src="https://imgur.com/61tciKy.png" alt="">
-                        <h1 class="display-4 fw-semibold" style="color: white;"><span class="solucoes-container">Outros</span> Projetos</h1>
+                        <h1 class="display-4 fw-semibold" style="color: white;"><span
+                                class="solucoes-container">Outros</span> Projetos</h1>
                     </div>
                 </div>
             </div>
@@ -324,7 +336,8 @@
                         </div>
                         <h5 class="mt-4 mb-3" style="color: white">Eu sou possível: Vamos cuidar da água?</h5>
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary btn-saibaMais" data-toggle="modal" data-target="#aguaModal">
+                        <button type="button" class="btn btn-primary btn-saibaMais" data-toggle="modal"
+                            data-target="#aguaModal">
                             Saiba Mais
                         </button>
                     </div>
@@ -332,11 +345,12 @@
                 <div class="col-lg-6 col-sm-6 d-flex" data-aos="fade-down" data-aos-delay="350">
                     <div class="service theme-shadow p-lg-5 p-4">
                         <div class="iconbox">
-                            <i class="fa-solid fa-hands-holding-circle fa-bounce fa-2xl"  style="color: white;"></i>
+                            <i class="fa-solid fa-hands-holding-circle fa-bounce fa-2xl" style="color: white;"></i>
                         </div>
                         <h5 class="mt-4 mb-3" style="color: white;">Eu sou possível: Vamos cuidar do Planeta?</h5>
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary btn-saibaMais" data-toggle="modal" data-target="#planetaModal">
+                        <button type="button" class="btn btn-primary btn-saibaMais" data-toggle="modal"
+                            data-target="#planetaModal">
                             Saiba Mais
                         </button>
                     </div>

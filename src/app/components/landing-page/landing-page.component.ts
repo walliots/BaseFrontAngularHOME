@@ -14,7 +14,7 @@ export class LandingPageComponent implements OnInit {
 
   backgroundImageUrl: string = 'https://i.imgur.com/kPX6F0F.jpeg';
   backgroundImageUrlRecife: string = 'https://i.imgur.com/EffXBgU.jpeg';
-  backgroundImageDemaisTelas: string = 'https://imgur.com/A4le7MO.png';
+  backgroundImageDemaisTelas: string = 'https://i.imgur.com/xAjkMsa.png';
   backgroungLogo: String = 'https://imgur.com/61tciKy.png';
 
   constructor() {

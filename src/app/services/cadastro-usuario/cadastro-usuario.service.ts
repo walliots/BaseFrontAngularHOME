@@ -10,7 +10,7 @@ export class CadastroUsuarioService {
 
   private readonly PATH: string = '/usuarios/listUser';
   private readonly PATH_USER_ID = 'usuarios/get';
-  private readonly PATH_USER: string ='/usuarios';
+  private readonly PATH_USER: string ='/api/usuarios';
 
   constructor(private http: HttpClient)  {}
 
