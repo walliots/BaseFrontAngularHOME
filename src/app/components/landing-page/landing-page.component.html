@@ -1,9 +1,8 @@
 <body data-bs-spy="scroll" data-bs-target=".navbar">
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" style="background-color: black !important;">
-        <a class="navbar-brand" href="#">
-            <h3 class="text-uppercase text-light fw-semibold ml-3">
-                home</h3>
+        <a class="navbar-brand" href="#hero">
+            <img class="" style="height: 50px; width: 100px;" src="https://imgur.com/61tciKy.png" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,27 +12,45 @@
             <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#hero">Bem vindo</a>
+                        <a class="nav-link" href="#about">NOSSO PROPÓSITO
+                            <span class="material-icons double-arrow-down">keyboard_double_arrow_down</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">Sobre nós</a>
+                        <a class="nav-link" href="#services">SOLUÇÕES
+                            <span class="material-icons double-arrow-down">keyboard_double_arrow_down</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#services">Serviços</a>
+                        <a class="nav-link" href="#projetos">+PROJETOS
+                            <span class="material-icons double-arrow-down">keyboard_double_arrow_down</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#reviews">Depoimentos</a>
+                        <a class="nav-link" href="#team">Time
+                            <span class="material-icons double-arrow-down">keyboard_double_arrow_down</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#team">Time</a>
+                        <a class="nav-link" href="#contact">Contato
+                            <span class="material-icons double-arrow-down">keyboard_double_arrow_down</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contato</a>
+                        <a class="nav-link" href="#reviews">Depoimentos
+                            <span class="material-icons double-arrow-down">keyboard_double_arrow_down</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">+Informações
+                            <span class="material-icons double-arrow-down">keyboard_double_arrow_down</span>
+                        </a>
                     </li>
                 </ul>
                 <div class="d-flex justify-content-end">
-                    <a href="#" class="btn btn-brand ms-lg-3" id="bg-hover">Empresas</a>
-                    <a href="#" class="btn btn-brand ms-lg-3" id="bg-hover">HOME FUNC</a>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
                 </div>
 
             </div>
@@ -82,36 +99,37 @@
 
 
 
-    <!-- cadastre-se main -->
-    <section id="hero" [ngStyle]="{'background-image': 'url(' + backgroundImageUrl + ')'}"
-        class="min-vh-100 d-flex align-items-center text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h1 data-aos="fade-left" class="text-uppercase text-white fw-semibold display-1">home</h1>
-                    <h1 class="text-white">Sua ação, gera solução!</h1>
-                    <h5 class="text-white mt-5 mb-4" data-aos="fade-right">Uma empresa sustentável é aquela que
-                        conhece suas operações e se empenha em usar bem seus recursos para deixar um resultado
-                        positivo na sociedade com políticas que resultem no seu desenvolvimento contínuo.
-                    </h5>
-                    <div class="mt-3">
-                        <div data-aos="fade-up" data-aos-delay="50">
-                            <button href="#" class="btn btn-brand me-2" id="bttn-cad"
-                                routerLink="/app-cadastro-empresa">CADASTRE-SE
-                                <i class="fa-solid fa-plug ml-3" style="color: green"></i>
-                            </button>
-                        </div>
-                        <span class="text-white" style="font-size: x-large;">
-                            Já possui cadastro?
-                            <a class="text-uppercase"
-                                style="color: #297A12; text-decoration: underline; font-weight: bold;"
-                                routerLink="/login">entre</a>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+     <!-- cadastre-se main -->
+     <section id="hero" [ngStyle]="{'background-image': 'url(' + backgroundImageUrl + ')'}"
+     class="min-vh-100 d-flex align-items-center text-center">
+     <div class="container">
+         <div class="row">
+             <div class="col-12">
+                 <h1 data-aos="fade-left" class="text-uppercase text-white fw-semibold display-1">
+                     home</h1>
+                 <img class="" style="" style="transform: translateX(-140px);" src="https://imgur.com/61tciKy.png" alt="">
+                 <h1 class="text-white">
+                     Sua ação, gera solução!
+                 </h1>
+                 <h5 class="text-white mt-5 mb-4" data-aos="fade-right">Uma empresa sustentável é aquela que 
+                     conhece suas operações e se empenha em usar bem seus recursos para deixar um resultado 
+                     positivo na sociedade com políticas que resultem no seu desenvolvimento contínuo.
+                 </h5>
+                 <div class="d-grid gap-2 col-6 mx-auto">
+                     <button class="btn btn-primary btn-cadastrar" type="button">Cadastre-se
+                         <i class="fa-solid fa-plug ml-3" style="color: green"></i>
+                     </button>
+                 </div>
+                 <div class="mt-3">
+                     <span class="text-white" style="font-size: x-large;">
+                         Já possui cadastro?
+                         <a class="text-uppercase" style="color: #297A12; text-decoration: underline; font-weight: bold;" href="">entre</a> 
+                     </span>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </section>
 
 
     <!-- ABOUT -->
@@ -153,8 +171,7 @@
                 <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
                     <div class="section-title">
                         <img class="" src="https://imgur.com/61tciKy.png" alt="">
-                        <h1 class="display-4 fw-semibold" style="color: white;"><span
-                                class="solucoes-container">SOLUÇÕE</span>S</h1>
+                        <h1 class="display-4 fw-semibold" style="color: white;"><span class="solucoes-container">SOLUÇÕE</span>S</h1>
                     </div>
                 </div>
             </div>
@@ -205,21 +222,36 @@
     <!-- Modal projeto -->
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content container-fluid"  style="background-color: rgba(102, 174, 44, 0.9);">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Projetos de sustentabilidade</h5>
+                    <h5 class="modal-title" id="exampleModalLongTitle" style="text-decoration:solid; color: white;">Projetos de sustentabilidade</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    Um empreendimento que assume seu papel de responsabilidade socioambiental fortalece sua imagem no
-                    mercado e junto à sociedade, portanto, a Consultoria Ambiental é essencial para assinalar esse
-                    compromisso de sua empresa ou projeto com o meio ambiente.
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <div class="row align-items-center">
+                        <div class="col-md-6 ml-auto">
+                            <img src="https://static.preparaenem.com/2022/06/painel-solar.jpg" alt="">
+                        </div>
+                        <div class="col-md-6 ml-auto">
+                            <h5 style="color: white;">
+                            Um empreendimento que assume seu papel de responsabilidade socioambiental fortalece sua imagem no
+                            mercado e junto à sociedade, portanto, a Consultoria Ambiental é essencial para assinalar esse
+                            compromisso de sua empresa ou projeto com o meio ambiente.
+                            </h5>
+                        </div>
+                    </div>
+                    <h5 class="mt-2" style="text-decoration: none; color: white;">ANÁLISE DE RISCO AMBIENTAL</h5>
+                    <span style="text-decoration: none; color: white;">
+                        A Análise de Risco Ambiental apresenta soluções exatas e bem definidas para a remediação de uma área 
+                        contaminada, o que 
+                        culmina por evitar tanto gastos desnecessários quanto a adoção de medidas pouco eficientes para a 
+                        reparação desses possíveis problemas.
+                    </span>
+
+                    
                 </div>
             </div>
         </div>
@@ -228,23 +260,20 @@
     <!-- Modal gestão -->
     <div class="modal fade" id="gestaoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
         aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content container-fluid" style="background-color: rgba(102, 174, 44, 0.9);">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Gestão ambiental</h5>
+                    <h5 class="modal-title" id="exampleModalLongTitle" style="color: white;">Gestão ambiental</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body" style="color:white">
                     A gestão ambiental é fundamental para garantir um desenvolvimento sustentável, que seja capaz de
                     atender às necessidades das gerações presentes sem comprometer as necessidades das gerações futuras.
                     A gestão ambiental envolve a identificação e avaliação dos impactos ambientais de uma determinada
                     atividade, a implementação de medidas para mitigar ou eliminar esses impactos e a monitorização
                     constante do desempenho ambiental da organização.
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                 </div>
             </div>
         </div>
@@ -253,15 +282,15 @@
     <!-- Modal consultoria -->
     <div class="modal fade" id="consultoriaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
         aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content" style="background-color: rgba(102, 174, 44, 0.9);">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Gestão ambiental</h5>
+                    <h5 class="modal-title" id="exampleModalLongTitle" style="color: white;">Gestão ambiental</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body" style="color: white;">
                     A consultoria ambiental é uma atividade que visa auxiliar empresas e organizações na gestão
                     ambiental de suas atividades. A consultoria ambiental é uma atividade multidisciplinar, que envolve
                     a análise de diversos aspectos relacionados ao meio ambiente, como a gestão de resíduos, a gestão de
@@ -272,21 +301,18 @@
                     da imagem da empresa perante a sociedade e a possibilidade de conquistar novos mercados que
                     valorizam empresas socialmente responsáveis.
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                </div>
             </div>
         </div>
     </div>
 
     <!-- OUTROS PROJETOS -->
-    <section id="services" class="section-padding border-top "
-        [ngStyle]="{'background-image': 'url(' + backgroundImageDemaisTelas + ')'}">
+    <section id="services" class="section-padding border-top " [ngStyle]="{'background-image': 'url(' + backgroundImageDemaisTelas + ')'}">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
                     <div class="section-title">
-                        <h1 class="display-4 fw-semibold" style="color: white">OUTROS PROJETOS</h1>
+                        <img style="transform: translateX(-140px);" src="https://imgur.com/61tciKy.png" alt="">
+                        <h1 class="display-4 fw-semibold" style="color: white;"><span class="solucoes-container">Outros</span> Projetos</h1>
                     </div>
                 </div>
             </div>
@@ -294,11 +320,11 @@
                 <div class="col-lg-6 col-sm-6" data-aos="fade-down" data-aos-delay="150" id="align">
                     <div class="service theme-shadow p-lg-5 p-4">
                         <div class="iconbox">
-                            <i class="fa-solid fa-hand-holding-droplet fa-fade fa-2xl"></i>
+                            <i class="fa-solid fa-hand-holding-droplet fa-bounce fa-2xl" style="color: white;"></i>
                         </div>
-                        <h5 class="mt-4 mb-3">Vamos cuidar da água:</h5>
+                        <h5 class="mt-4 mb-3" style="color: white">Eu sou possível: Vamos cuidar da água?</h5>
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#aguaModal">
+                        <button type="button" class="btn btn-primary btn-saibaMais" data-toggle="modal" data-target="#aguaModal">
                             Saiba Mais
                         </button>
                     </div>
@@ -306,11 +332,11 @@
                 <div class="col-lg-6 col-sm-6 d-flex" data-aos="fade-down" data-aos-delay="350">
                     <div class="service theme-shadow p-lg-5 p-4">
                         <div class="iconbox">
-                            <i class="fa-solid fa-hands-holding-circle fa-fade fa-2xl"></i>
+                            <i class="fa-solid fa-hands-holding-circle fa-bounce fa-2xl"  style="color: white;"></i>
                         </div>
-                        <h5 class="mt-4 mb-3">Eu pratico, vamos cuidar do Planeta:</h5>
+                        <h5 class="mt-4 mb-3" style="color: white;">Eu sou possível: Vamos cuidar do Planeta?</h5>
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#planetaModal">
+                        <button type="button" class="btn btn-primary btn-saibaMais" data-toggle="modal" data-target="#planetaModal">
                             Saiba Mais
                         </button>
                     </div>
